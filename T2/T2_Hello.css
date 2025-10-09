@@ -1,0 +1,14 @@
+button{
+    background-color: gainsboro;
+    color: rgb(2, 2, 2);
+    border-radius: 20px;
+    border: 2px solid silver;
+
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
