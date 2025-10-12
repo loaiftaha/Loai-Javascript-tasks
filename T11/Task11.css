@@ -1,0 +1,45 @@
+
+/* Buttons */
+.button {
+    display: flex ;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    transition: background var(--transition), box-shadow var(--transition);
+    margin: 0.25rem;
+}
+
+.button--primary {
+    background: var(--color-primary);
+    color: #fff;
+}
+
+.button--primary:hover,
+.button--primary:focus {
+    background: var(--color-accent);
+    box-shadow: 0 2px 8px rgba(33, 230, 193, 0.15);
+}
+
+.button--secondary {
+    background: var(--color-secondary);
+    color: var(--color-primary);
+    border: 1px solid var(--color-primary);
+}
+
+.button--secondary:hover,
+.button--secondary:focus {
+    background: var(--color-primary);
+    color: #fff;
+}
+
+.button--disabled,
+.button:disabled {
+    background: var(--color-muted);
+    color: #fff;
+    cursor: not-allowed;
+    opacity: 0.6;
+}
+
